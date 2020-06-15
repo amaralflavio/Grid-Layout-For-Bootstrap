@@ -1,0 +1,107 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***************
+-- Variables
+*/
+
+:root {
+    --text-primary: #000;
+    --background-color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 10px;
+    /*font-size: 62.5%; For user browser resize */ 
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+}
+
+/***************
+-- Globals
+*/
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+p.small {
+    font-size: 1.2rem;
+}
+
+span {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.material-icons {
+    color: #000; }
+.material-icons.md-18 {
+    font-size: 1.8rem; }
+.material-icons.md-24 {
+    font-size: 2.4rem; }
+.material-icons.md-32 {
+    font-size: 3.2rem; }
+.material-icons.md-36 {
+    font-size: 3.6rem; }
+.material-icons.md-48 {
+    font-size: 4.8rem; }
+
+/***************
+-- Nav
+*/
+nav {
+    background-color: lightblue;
+}
+
+/***************
+-- Header
+*/
+header {
+    background-color: pink;
+}
+
+/***************
+-- Main
+*/
+main {
+    background-color: bisque;
+}
+
+/***************
+-- Footer
+*/
+footer {
+    background-color: lightsalmon;
+    margin-top: auto;
+}
