@@ -1,0 +1,98 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$background-color: #eff0f3;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $background-color;
+}
+
+//multi-line truncate
+.mlt {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+  overflow: hidden;
+}
+
+//bootstrap content
+.bc {
+  padding: 100px 0;
+}
+
+//card container
+.cc {
+  background-color: $background-color;
+  overflow: hidden;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 350px;
+
+  @media (max-width: 575.98px) {
+    grid-template-columns: 15px repeat(10, 1fr) 15px;
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    //540px / 10
+    grid-template-columns: 1fr repeat(10, 54px) 1fr;
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    //720px / 10
+    grid-template-columns: 1fr repeat(10, 72px) 1fr;
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    //960px / 10
+    grid-template-columns: 1fr repeat(10, 96px) 1fr;
+  }
+
+  @media (min-width: 1200px) {
+    //1140px / 10
+    grid-template-columns: 1fr repeat(10, 114px) 1fr;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+//image container
+.ic {
+  &--7-13 {
+    grid-column: 7 / -1;
+  }
+
+  &--1-6 {
+    grid-column: 1 / 6;
+  }
+}
+
+//text container
+.tc {
+  align-self: center;
+  &--2-6 {
+    grid-column: 2 / 6;
+  }
+
+  &--7-12 {
+    grid-column: 7 / 12;
+  }
+
+  @media (min-width: 576px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
